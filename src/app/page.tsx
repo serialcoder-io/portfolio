@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar";
 import Image from "next/image";
 
 export const metadata = {
@@ -10,8 +11,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="text-white p-8">
-      Tailwind is working!
-      <button className="btn btn-primary text-white">hello</button>
+      <Navbar />
     </div>
   );
 }
