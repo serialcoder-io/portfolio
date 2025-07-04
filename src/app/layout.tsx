@@ -1,3 +1,6 @@
+import './globals.css';
+
+
 export const metadata = {
   title: {
     default: "Omar Anli | Backend & Full-Stack Developer",
@@ -53,11 +56,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body className="bg-base-200 h-screen">{children}</body>
     </html>
   );
 }
