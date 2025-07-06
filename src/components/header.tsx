@@ -1,5 +1,6 @@
 import NavBar from "./navbar";
 import Image from "next/image";
+import Clock from "@/ui/Home/clock";
 
 
 export default function Header(){
@@ -10,7 +11,7 @@ export default function Header(){
             </div>
             <NavBar />
             <div>
-                <p>90:30:30</p>
+                <Clock />
             </div>
         </header>
     );
