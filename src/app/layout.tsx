@@ -1,3 +1,4 @@
+import Header from '@/components/header';
 import './globals.css';
 
 
@@ -60,7 +61,15 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className="bg-base-200 h-screen">{children}</body>
+      <body className="relative bg-base-200 min-h-screen overflow-hidden z-0">
+        {/* Lueur fixe */}
+        <div className="fixed top-[10%] left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-primary blur-[100px] opacity-30 z-0 pointer-events-none rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"></div>
+
+        <Header />
+        <main className="relative z-10">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
