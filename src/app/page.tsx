@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar";
+import Header from "@/components/header";
 import Image from "next/image";
 
 export const metadata = {
@@ -11,7 +11,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="text-white p-8">
-      <Navbar />
+      <Header />
     </div>
   );
 }
