@@ -1,11 +1,6 @@
 import Link from 'next/link';
+import { IconLinkType } from '@/lib/definition';
 
-type IconLinkType = {
-  text?: string;
-  href: string;
-  icon?: React.ReactNode;
-  className?: string;
-};
 
 export default function IconLink({ text, href, icon, className = '' }: IconLinkType) {
   return (
