@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </head>
       <body className={`${lusitana.className} antialiased relative bg-base-200 min-h-screen overflow-hidden z-0`}>
         {/* Lueur fixe */}
