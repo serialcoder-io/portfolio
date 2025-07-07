@@ -1,9 +1,9 @@
 import NavButton from "@/ui/nav-button";
 import IconLink from "@/ui/icon-link";
 
-import { CircleUserRound, Phone, House, FileCode} from "lucide-react";
+import { CircleUserRound, Phone, House, FileCode } from "lucide-react";
 
-export default function NavBar(){
+export default function NavBar() {
     return (
         <nav className="bg-base-100 shadow-lg flex items-center gap-x-1 border rounded-4xl px-2 py-1 border-none">
             <IconLink
