@@ -9,7 +9,7 @@ export default function NavBar() {
             <IconLink
                 href=""
                 icon={<House size={18} />}
-                className="bg-transparent hover:text-primary-content"
+                className="bg-transparent hover:text-primary-content hover:bg-primary"
             />
             <div className="w-[1px] h-7 bg-neutral opacity-20"></div>
             <div className="flex items-center gap-x-2">
@@ -17,19 +17,19 @@ export default function NavBar() {
                     text="About"
                     href=""
                     icon={<CircleUserRound size={18} />}
-                    className="bg-transparent hover:text-primary-content"
+                    className="bg-transparent hover:text-primary-content hover:bg-primary"
                 />
                 <IconLink
                     text="Projects"
                     href=""
                     icon={<FileCode size={18} />}
-                    className="bg-transparent hover:text-primary-content"
+                    className="bg-transparent hover:text-primary-content hover:bg-primary"
                 />
                 <IconLink
                     text="Contact"
                     href=""
                     icon={<Phone size={18} />}
-                    className="bg-transparent hover:text-primary-content"
+                    className="bg-transparent hover:text-primary-content hover:bg-primary"
                 />
             </div>
             <div className="w-[1px] h-7 bg-neutral opacity-20"></div>

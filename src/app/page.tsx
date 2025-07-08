@@ -1,4 +1,5 @@
 //import Image from "next/image";
+import Hero from "@/components/home/hero";
 
 export const metadata = {
   title: "Home | Omar Anli",
@@ -9,7 +10,6 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <section className="hero-section">
-    </section>
+    <Hero />
   );
 }

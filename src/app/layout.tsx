@@ -63,7 +63,13 @@ export default function RootLayout({
       </head>
       <body className={`${lusitana.className} antialiased relative bg-base-200 min-h-screen overflow-hidden z-0`}>
         {/* Lueur fixe */}
-        <div className="fixed top-[10%] left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-primary blur-[100px] opacity-30 z-0 pointer-events-none rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"></div>
+        <div
+          className="fixed top-[10%] left-1/2 -translate-x-1/2 w-[700px] h-[400px] 
+          bg-primary opacity-30 z-0 pointer-events-none rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%]"
+          style={{ filter: "blur(var(--blur-halo))" }}
+        >
+
+        </div>
 
         <Header />
         <main className="relative z-10">
