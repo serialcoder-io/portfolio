@@ -46,10 +46,22 @@ model Image {
   projectId Int
 }
 
+enum ToolType {
+  language
+  framework
+  library
+  tool
+  database
+  testing
+  other
+}
+
 model Tool {
   id          Int               @id @default(autoincrement())
   name        String            @unique
   logo        String?
+  website     String?
+  toolType    ToolType          @default(other)
   projects    ProjectTools[]
   experiences ExperienceTools[]
 }
