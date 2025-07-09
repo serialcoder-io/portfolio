@@ -1,6 +1,7 @@
 import Header from '@/components/header';
 import '@/ui/globals.css';
 import { lusitana } from '@/ui/fonts';
+import Footer from '@/components/footer';
 
 export const metadata = {
   title: {
@@ -75,6 +76,7 @@ export default function RootLayout({
         <main className="relative z-10">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
