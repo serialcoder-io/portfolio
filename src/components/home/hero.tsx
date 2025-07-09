@@ -34,7 +34,7 @@ export default function Hero() {
         <Link
           href="/contact"
           className="btn mt-8 h-14 px-5 border-1 border-primary font-semibold rounded-full 
-          text-base-content text-lg bg-base-100 hover:bg-primary hover:text-primary-content 
+          text-primary text-lg bg-base-100 hover:bg-primary hover:text-primary-content 
           transition-colors duration-300 ease-in-out"
         >
           Get in Touch
