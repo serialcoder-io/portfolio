@@ -1,5 +1,5 @@
 import ExternalIconLink from "@/ui/external-icon-link";
-import { Github, Linkedin } from "lucide-react";
+import { BookOpenText, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 
@@ -30,6 +30,12 @@ export default function Hero() {
             icon={<Github size={18} />}
             className="bg-base-100 hover:text-primary-base-content hover:bg-base-300"
           />
+          <ExternalIconLink
+            text="resume"
+            href="https://github.com/serialcoder-io"
+            icon={<BookOpenText size={18} />}
+            className="bg-base-100 hover:text-primary-base-content hover:bg-base-300"
+          />
         </div>
         <Link
           href="/contact"
@@ -37,7 +43,7 @@ export default function Hero() {
           text-primary text-lg bg-base-100 hover:bg-primary hover:text-primary-content 
           transition-colors duration-300 ease-in-out"
         >
-          Get in Touch
+          Work With Me
         </Link>
       </div>
     </section>
