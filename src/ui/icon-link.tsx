@@ -14,14 +14,14 @@ export default function IconLink({
 ) {
 
   const pathname = usePathname();
-  console.log('PATHNAME:', pathname, '| HREF:', href);
 
 
   return (
     <Link href={href}
       className={clsx(
-        'transition-colors duration-300 ease-in-out btn rounded-full border-none flex items-center gap-2 h-8',
-        pathname === href && 'bg-primary text-primary-content',
+        'transition-colors duration-300 ease-in-out btn rounded-full text-base-content' +
+        'border-0 border-transparent flex items-center gap-2 h-8 hover:text-base-content hover:bg-base-300',
+        pathname === href ? 'bg-base-300' : 'bg-base-100',
         className
       )}
     >
