@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import PrimaryButton from "@/ui/primary-button";
 
 export default function AboutSection() {
   return (
@@ -29,15 +29,10 @@ export default function AboutSection() {
           <p>
             My goal? Turn ideas into efficient, reliable, and sustainable solutions.
           </p>
-
-          <Link
+          <PrimaryButton
+            text="More about me"
             href="/about"
-            className="btn mt-8 h-14 px-6 border border-primary font-semibold rounded-full 
-            text-primary text-lg bg-base-100 hover:bg-primary hover:text-primary-content 
-            transition-colors duration-300 ease-in-out"
-          >
-            More about me
-          </Link>
+          />
         </div>
       </div>
     </section>

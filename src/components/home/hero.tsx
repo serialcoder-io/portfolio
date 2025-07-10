@@ -1,6 +1,6 @@
 import ExternalIconLink from "@/ui/external-icon-link";
 import { BookOpenText, Github, Linkedin } from "lucide-react";
-import Link from "next/link";
+import PrimaryButton from "@/ui/primary-button";
 
 
 export default function Hero() {
@@ -37,14 +37,10 @@ export default function Hero() {
             className="bg-base-100 hover:text-primary-base-content hover:bg-base-300"
           />
         </div>
-        <Link
+        <PrimaryButton
+          text="Work With Me"
           href="/contact"
-          className="btn mt-8 h-14 px-5 border-1 border-primary font-semibold rounded-full 
-          text-primary text-lg bg-base-100 hover:bg-primary hover:text-primary-content 
-          transition-colors duration-300 ease-in-out"
-        >
-          Work With Me
-        </Link>
+        />
       </div>
     </section>
   )

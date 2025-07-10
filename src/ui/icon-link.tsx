@@ -2,7 +2,13 @@ import Link from 'next/link';
 import { IconLinkType } from '@/lib/definition';
 
 
-export default function IconLink({ text, href, icon, className = '' }: IconLinkType) {
+export default function IconLink({
+   text, 
+   href, 
+   icon, 
+   className = '' 
+  }: IconLinkType
+) {
   return (
     <Link href={href}
       className={
