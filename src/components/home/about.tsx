@@ -3,37 +3,43 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="max-w-6xl mx-auto py-5 px-6 text-base-content">
-      <h2 className="text-4xl font-bold mb-12 text-primary text-center">About Me</h2>
+    <section id="about" className="max-w-6xl mx-auto py-20 px-6 text-base-content">
+      <h2 className="text-4xl font-bold mb-16 text-primary text-center">About Me</h2>
 
-      {/* Intro image + texte */}
-      <div className="flex flex-col md:flex-row md:items-start md:gap-12 mb-20">
-        <div className="flex-shrink-0 mb-8 md:mb-0">
+      <div className="flex flex-col md:flex-row items-start gap-10">
+        {/* Image */}
+        <div className="w-48 h-48 relative mx-auto md:mx-0">
           <Image
             src="/profile.png"
             alt="Profile photo"
-            width={192}
-            height={192}
-            className="rounded-full shadow-lg object-cover"
+            fill
+            className="rounded-full object-cover shadow-md"
           />
         </div>
-        <div className="md:flex-1">
-          <p className="text-lg leading-relaxed mb-6">
-            I design scalable software with clean architecture and smooth user experience.  
-            I focus on internal tools—custom apps that help teams streamline workflows, manage operations, and solve real business problems.  
-            Always built for performance, clarity, and long-term reliability.
+
+        {/* Text content */}
+        <div className="flex-1 text-lg leading-relaxed">
+          <p className="mb-5">
+            I build scalable software with clean architecture and smooth user experience.
+            My focus is on <span className="font-medium text-primary">internal tools</span> — custom apps that solve real business problems and help teams streamline their daily work.
           </p>
+          <p className="mb-5">
+            Whether it&apos;s automation, dashboarding, or backend services, I aim for performance, maintainability, and clarity.
+          </p>
+          <p>
+            My goal? Turn ideas into efficient, reliable, and sustainable solutions.
+          </p>
+
           <Link
-          href="/about"
-          className="btn mt-8 h-14 px-5 border-1 border-primary font-semibold rounded-full 
-          text-primary text-lg bg-base-100 hover:bg-primary hover:text-primary-content 
-          transition-colors duration-300 ease-in-out"
-        >
-          More about me
-        </Link>
+            href="/about"
+            className="btn mt-8 h-14 px-6 border border-primary font-semibold rounded-full 
+            text-primary text-lg bg-base-100 hover:bg-primary hover:text-primary-content 
+            transition-colors duration-300 ease-in-out"
+          >
+            More about me
+          </Link>
         </div>
       </div>
     </section>
   );
 }
-
