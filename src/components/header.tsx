@@ -5,7 +5,7 @@ import Clock from "@/ui/Home/clock";
 
 export default function Header() {
     return (
-        <header className="flex justify-between items-center px-8 py-5">
+        <header className="flex justify-between items-center px-8 py-5 sticky top-0 z-50">
             <div>
                 <Image src="logo-light.svg" alt="logo" width={120} height={14} />
             </div>
