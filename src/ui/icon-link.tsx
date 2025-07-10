@@ -21,7 +21,7 @@ export default function IconLink({
       className={clsx(
         'transition-colors duration-300 ease-in-out btn rounded-full text-base-content' +
         'border-0 border-transparent flex items-center gap-2 h-8 hover:text-base-content hover:bg-base-300',
-        pathname === href ? 'bg-base-300' : 'bg-base-100',
+        pathname === href && 'bg-base-300',
         className
       )}
     >
