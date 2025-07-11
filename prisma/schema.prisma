@@ -70,6 +70,7 @@ enum ExperienceType {
   freelance
   perm
   ftc
+  internship
 }
 
 model Experience {
