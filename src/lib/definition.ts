@@ -1,3 +1,4 @@
+import { Tool } from "@prisma/client";
 import React from "react";
 
 export type IconLinkType = {
@@ -17,4 +18,9 @@ export type PrimaryButtonType = {
   text: string;
   href: string;
   className?: string
+}
+
+export type SkillsCategoryProps = {
+    category: string
+    items: Tool[]
 }
