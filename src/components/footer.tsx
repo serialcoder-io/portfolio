@@ -19,19 +19,19 @@ export default function Footer(){
                        
                         href="https://www.linkedin.com/in/omar-anli-25215b2b2/"
                         icon={<Linkedin size={18} />}
-                        className="bg-base-100 hover:text-primary-primary-content hover:bg-primary"
+                        className="bg-base-100 hover:text-primary-content hover:bg-primary"
                     />
                     <ExternalIconLink
                         
                         href="https://github.com/serialcoder-io"
                         icon={<Github size={18} />}
-                        className="bg-base-100 hover:text-primary-primary-content hover:bg-primary"
+                        className="bg-base-100 hover:text-primary-content hover:bg-primary"
                     />
                     <ExternalIconLink
                        
                         href="https://www.facebook.com/anliomar.sandia"
                         icon={<Facebook size={18} />}
-                        className="bg-base-100 hover:text-primary-primary-content hover:bg-primary"
+                        className="bg-base-100 hover:text-primary-content hover:bg-primary"
                     />
                 </div>
             </div>

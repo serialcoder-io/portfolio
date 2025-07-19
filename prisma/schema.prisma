@@ -54,6 +54,7 @@ enum ToolType {
   database
   testing
   other
+  style
 }
 
 model Tool {
