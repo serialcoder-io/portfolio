@@ -63,6 +63,7 @@ model Tool {
   logo        String?
   website     String?
   toolType    ToolType          @default(other)
+  color       String            @default("#4F46E5")
   projects    ProjectTools[]
   experiences ExperienceTools[]
 }

@@ -12,15 +12,15 @@ export type FeatureCardProps = {
   title: string;
   desc: string;
   icon: React.ReactNode;
-}
+};
 
 export type PrimaryButtonType = {
   text: string;
   href: string;
-  className?: string
-}
+  className?: string;
+};
 
 export type SkillsCategoryProps = {
-    category: string
-    items: Tool[]
-}
+  category: string;
+  items: Tool[];
+};

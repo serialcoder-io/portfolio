@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Tool" ADD COLUMN     "color" TEXT NOT NULL DEFAULT '#4F46E5';
