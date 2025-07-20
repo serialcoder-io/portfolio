@@ -11,7 +11,6 @@ export default async function SkillsSection() {
       ["framework", "library", "testing"].includes(c.toolType)
     ),
     Databases: competencies.filter((c) => c.toolType === "database"),
-    Style: competencies.filter((c) => ["style"].includes(c.toolType)),
     Tools: competencies.filter((c) => ["tool"].includes(c.toolType)),
   };
 

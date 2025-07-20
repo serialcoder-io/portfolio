@@ -57,7 +57,8 @@ export default async function ExperienceSection() {
               {exp.tools.map((tool, i) => (
                 <span
                   key={i}
-                  className="bg-primary text-primary-content text-xs px-2 py-1 rounded-full"
+                  className="text-xs px-2 py-1 rounded-full text-white font-bold"
+                  style={{ backgroundColor: tool.tool.color }}
                 >
                   {tool.tool.name}
                 </span>
